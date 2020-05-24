@@ -1,7 +1,7 @@
 {
-    "name": "utils-webpack",
+    "name": "Responsive-Modern",
     "version": "1.0.0",
-    "description": "Simple utilities to compare different frameworks. This one is based on webpack and preprocessors. ",
+    "description": "Modern responsive web-site template",
     "private": true,
     "main": "index.js",
     "scripts": {
@@ -14,7 +14,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/skripkalisa/utils-webpack.git"
+        "url": "git+https://github.com/skripkalisa/Responsive-Modern.git"
     },
     "keywords": [
         "webpack",
@@ -24,9 +24,9 @@
     "author": "skripkalisa",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/skripkalisa/utils-webpack/issues"
+        "url": "https://github.com/skripkalisa/Responsive-Modern/issues"
     },
-    "homepage": "https://github.com/skripkalisa/utils-webpack#readme",
+    "homepage": "https://github.com/skripkalisa/Responsive-Modern#readme",
     "devDependencies": {
         "@babel/core": "^7.9.0",
         "@babel/preset-env": "^7.9.0",
