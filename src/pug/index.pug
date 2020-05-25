@@ -6,20 +6,7 @@ block variables
   - var pageClass = "index-page";
 
 block content
-
-  .info
-    hr
-    +article(
-      'Article1 Title',
-      'Article1 Text'
-      ).odd
-    hr
-    +article(
-      'Article2 Title',
-      'Article2 Text'
-      ).even
-    hr
-
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js')
+  include ./includes/section1
+  include ./includes/section2
+  include ./includes/section3
+  include ./includes/section4

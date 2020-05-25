@@ -2,3 +2,12 @@ mixin article(title, text)
   article
     h2.article-title=title
     p.article-text=text
+mixin section(subtitle, title, body, link)
+  section
+    .container
+      .main-message
+        h3.section-title=subtitle
+        h1.section-title=title
+        p.section-body=body
+        .cta
+          a.btn(href="#")=link

@@ -1,0 +1,375 @@
+// Global Styles
+*, *::before, *::after
+  margin 0
+  padding 0
+  box-sizing border-box
+
+html
+  font-family $mainFont
+  font-size $mainFontSize
+  box-sizing border-box
+
+a
+  text-decoration none
+
+ul
+  list-style none
+
+p
+  font-size 1.6rem
+
+img
+  width 100%
+  max-width 100%
+  height auto
+
+section
+  padding 10rem 0
+
+header
+  width 100%
+  height 5rem
+  position absolute
+  top 0
+  left 0
+  z-index 1
+
+.btn
+  position absolute
+  background-color $decor-color
+  border-radius 2rem
+  color $mainFontColor
+  display inline-flex
+  left 50%
+  transform translate(-50%, -50%)
+  margin-top 4rem
+  margin-bottom 4rem
+  padding 1rem 2.5rem
+  text-transform uppercase
+  transition background-color 650ms
+
+.btn:hover
+  background-color $effect-color
+
+.container
+  width 100%
+  max-width 198rem
+  margin 0 auto
+  padding 0 1.5rem
+
+nav
+  width 100%
+  display flex
+  align-items center
+  justify-content space-between
+  padding 1rem 0
+  border-bottom 1px solid $border-base
+
+.nav-brand
+  width 2rem
+
+.menu-icons i
+  font-size 3.5rem
+  color $mainFontColor
+  cursor pointer
+
+.close
+  color $decor-color
+
+.nav-list
+  display flex
+  width 25rem
+  height 100vh
+  background-color $background-color
+  position fixed
+  top 0
+  right -26rem
+  flex-direction column
+  align-items center
+  justify-content center
+  z-index 1500
+  transition all 650ms ease-in-out
+
+.nav-list.active
+  right 0
+
+.close
+  position absolute
+  top 1rem
+  left 1.5rem
+
+.nav-item
+  margin 1.5rem 0
+
+.nav-link
+  font-size 1.6rem
+  text-transform uppercase
+  color $darkFontColor
+
+// Section One
+.one
+  width 100%
+  height 100vh
+  // background linear-gradient(135deg, rgba(49, 24, 131, 0.9) 0%, rgba(72, 56, 149, 0.8) 100%), url('/assets/img/header-bg.jpg') center no-repeat
+  background linear-gradient(135deg, $gradient-color-dark 0%, $gradient-color-light 100%), url('https://picsum.photos/1200/800?random=1') center no-repeat
+  background-size cover
+  position relative
+
+.one::before
+  content ''
+  position absolute
+  left 0
+  bottom -3px
+  width 100%
+  height 4.7rem
+  background url('/assets/img/wave-small.png') center no-repeat // round
+  background-size cover
+
+.one-main-message
+  width 100%
+  max-width 50rem
+  color $mainFontColor
+  text-transform uppercase
+  transform translateY(25%)
+
+.one-main-message h3
+  font-size 1.6rem
+
+.one-main-message h1
+  font-family $accentFont
+  font-size 4rem
+  margin 1rem 0
+
+.one-main-message p
+  text-transform lowercase
+
+// Section Two
+.two
+  padding 0
+
+.title-heading
+  text-align center
+  text-transform uppercase
+  margin-bottom 10rem
+  color $darkFontColor
+
+.title-heading h3
+  font-size 1.4rem
+
+.title-heading h1
+  font-family $accentFont
+  font-size 2rem
+  margin 0.5rem 0 1rem
+
+.title-heading p
+  text-transform lowercase
+
+.two-grid
+  display grid
+  grid-template-columns repeat(auto-fit, minmax(30rem, 1fr))
+  grid-gap 2.5rem
+
+.two-grid-item
+  height 40rem
+  padding 5rem
+  color $mainFontColor
+  position relative
+  display grid
+  flex-direction column
+  justify-content center
+  cursor pointer
+  z-index 1
+  align-self center
+  justify-self center
+
+.two-grid-item::before
+  content ''
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background linear-gradient(135deg, $gradient-color-dark 0%, $gradient-color-light 100%)
+  z-index -1
+
+.card-1
+  background url('https://picsum.photos/640/400?random=1') center no-repeat // /id/1036
+
+.card-2
+  background url('https://picsum.photos/640/400?random=2') center no-repeat // /id/1015
+
+.card-3
+  background url('https://picsum.photos/640/400?random=3') center no-repeat // /id/103
+
+.two-grid-item i
+  font-size 4rem
+  color $decor-color
+  align-self center
+  justify-self center
+
+.two-grid-item h1
+  font-family $accentFont
+  font-size 1.7rem
+  text-transform uppercase
+  margin 2rem 0
+  align-self center
+  justify-self center
+
+// Section Three - Testimonials
+.three
+  width 100%
+  height 100vh
+  background linear-gradient(135deg, $gradient-color-dark 0%, $gradient-color-light 100%), url('https://picsum.photos/1200/800?random=2') center no-repeat fixed
+  background-size cover
+  position relative
+
+.three::before
+  content ''
+  position absolute
+  top -3px
+  left 0
+  width 100%
+  height 4.7rem
+  background url('/assets/img/wave-small-reversed.png') center no-repeat // round
+  background-size cover
+
+.three-testimonial
+  width 100%
+  color $mainFontColor
+  position absolute
+  top 65%
+  left 50%
+  transform translate(-50%, -50%)
+  text-align center
+
+.testimonial-text-box
+  padding 0 1.5rem
+  margin-bottom 2rem
+  position relative
+
+.testimonial-text-box i
+  position absolute
+  top -8rem
+  left 50%
+  transform translateX(-50%)
+  font-size 8rem
+  color $decor-color
+  opacity 0.5
+  z-index -1
+
+.testimonial-customer img
+  width 10rem
+  height 10rem
+  border-radius 100%
+  border 3px solid $decor-color
+
+// Section Four
+.four-grid
+  display grid
+  grid-template-columns repeat(auto-fit, minmax(30rem, 1fr))
+  grid-gap 2.5rem
+  margin-bottom 2rem
+
+.four-grid p
+  color $mainFontColor
+
+footer
+  padding 2.5rem
+  background-color $background-color
+  text-align center
+  color $darkFontColor
+
+// Media queries
+@media screen and (min-width 350px)
+  .one-main-message
+    transform translateY(5%)
+
+  .one, .three
+    height 45rem
+
+@media screen and (min-width 470px)
+  .one::before
+    height 9.4rem
+    background url('/assets/img/wave-medium.png') center
+    background-size cover
+
+  .three::before
+    height 9.4rem
+    background url('/assets/img/wave-medium-reversed.png') center
+    background-size cover
+
+  .one, .three
+    height 45rem
+
+@media screen and (min-width 700px)
+  header
+    height 8rem
+
+  .nav-brand
+    width 3.5rem
+
+  .nav-list
+    width initial
+    height initial
+    background-color transparent
+    position initial
+    top initial
+    right initial
+    flex-direction row
+    transition initial
+
+  .menu-icons
+    display none
+
+  .nav-item
+    margin 0 2.5rem
+
+  .nav-link, .current
+    color $mainFontColor
+    position relative
+    font-size 1.3rem
+
+  .nav-link::before, .current::before
+    content ''
+    position absolute
+    left 0
+    bottom -0.5rem
+    background-color $decor-color
+    width 100%
+    height 2px
+    transform scaleX(0)
+    transform-origin left
+    transition transform 650ms
+
+  .current::before
+    transform scaleX(1)
+
+  .nav-link:hover::before
+    transform scaleX(1)
+
+  .one, .three
+    height 55rem
+
+  .one-main-message
+    transform translateY(45%)
+
+  .title-heading h1
+    font-size 2.5rem
+
+@media screen and (min-width 950px)
+  .one::before
+    height 22.7rem
+    background url('/assets/img/wave-large.png') center
+    background-size cover
+
+  .three::before
+    height 22.7rem
+    background url('/assets/img/wave-large-reversed.png') center
+    background-size cover
+
+  .one, .three
+    height 80rem
+
+@media screen and (min-width 1200px)
+  .one, .three
+    height 65rem

@@ -1,5 +1,22 @@
 header 
   .container
-    ul
-      li
-        a(href='#art1') Menu Link
+    nav
+      .nav-brand 
+        a(href="index.html")
+          img(src="/assets/img/logo-2.png")
+      .menu-icons.open
+        i.icon.ion-md-menu
+
+      ul.nav-list
+        .menu-icons.close
+          i.icon.ion-md-close
+        li.nav-item
+          a.nav-link.current(href='#') Home
+        li.nav-item
+          a.nav-link(href='#') Go To
+        li.nav-item
+          a.nav-link(href='#') Pricing
+        li.nav-item
+          a.nav-link(href='#') Booking
+        li.nav-item
+          a.nav-link(href='#') About

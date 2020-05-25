@@ -10,10 +10,10 @@ html(lang='en')
     title #{title}
     block head
   body(class=pageClass)
-    .wrapper
-      #app
-        include ../includes/modules/header
-        .content-wrapper
-          block content
-        include ../includes/modules/footer
+    //- .wrapper
+    //-   #app
+    include ../includes/modules/header
+    //.content-wrapper
+    block content
+    include ../includes/modules/footer
     block script
